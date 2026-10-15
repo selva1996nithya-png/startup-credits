@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4ytgj39zvhhdhstxsgn18g6
+  slug: couchbase
+  slug_aliases: []
+  name: Couchbase
+  domains:
+    - value: couchbase.com
+      role: primary
+      valid_from: 2026-10-15T00:00:00.000Z
+  category: databases
+profile:
+  summary: Couchbase provides Capella, a cloud database platform with vector search and mobile application services.
+  description: Couchbase provides a cloud database platform for modern applications.
+  links:
+    site: https://info.couchbase.com/aws-activate.html
+sources:
+  - source_id: src_0e6de24b22d55b89e4677c46e9d174e95c6ce82823eae40f786d9b1366ec9559
+    url: https://info.couchbase.com/aws-activate.html
+programs: []
+offers:
+  - offer_id: off_01m4ytgj3974pb8vr519pvcmfg
+    offer_slug: capella-develop-starter-kit
+    offer_slug_aliases: []
+    title: Capella Develop Starter Kit
+    summary: New Couchbase Capella customers can apply for a free development bundle with database credits, onboarding, consulting and certification, with a stated total value of $12,750.
+    description: Select the Enterprise Plan when creating databases. Usage still running after the included 5,000 credits are consumed defaults to on-demand pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_capella_credits
+          description: 5,000 Capella Enterprise Credits, with a stated value of $10,000.
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 1000000
+        - benefit_id: ben_onboarding_consulting
+          description: Onboarding and three virtual consulting days, with a stated value of $2,700.
+          kind: other
+        - benefit_id: ben_developer_certification
+          description: One Associate Developer Certification, with a stated value of $50.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_new_customer
+        reason: external-verification
+        statement: Applicants must be new Couchbase Capella customers and complete the application form accurately. Applicants based in Europe or India must provide a VAT number.
+    roles:
+      terms_authority_entity_id: ent_01m4ytgj39zvhhdhstxsgn18g6
+      access_operator_entity_id: ent_01m4ytgj39zvhhdhstxsgn18g6
+    access:
+      availability: public
+      method: form
+      url: https://info.couchbase.com/aws-activate.html
+    source_ids:
+      - src_0e6de24b22d55b89e4677c46e9d174e95c6ce82823eae40f786d9b1366ec9559
