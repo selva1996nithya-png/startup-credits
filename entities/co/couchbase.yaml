@@ -48,16 +48,10 @@ offers:
           kind: other
     eligibility:
       rule:
-        kind: all
-        rules:
-          - kind: manual
-            criterion_id: cri_new_customer
-            reason: external-verification
-            statement: Only new Couchbase Capella customers qualify for the promotion.
-          - kind: manual
-            criterion_id: cri_regional_vat
-            reason: external-verification
-            statement: Applicants located in Europe or India must supply a VAT number.
+        kind: manual
+        criterion_id: cri_new_customer
+        reason: external-verification
+        statement: You must be a new Couchbase Capella customer to qualify for this promotion.
     roles:
       terms_authority_entity_id: ent_01m4ytgj39zvhhdhstxsgn18g6
       access_operator_entity_id: ent_01m4ytgj39zvhhdhstxsgn18g6
@@ -65,6 +59,6 @@ offers:
       availability: public
       method: form
       url: https://info.couchbase.com/aws-activate.html
-      instructions: Complete all application fields accurately; incomplete or inaccurate information may prevent Couchbase from processing the order.
+      instructions: Complete all application fields accurately; incomplete or inaccurate information may prevent Couchbase from processing the order. Applicants based in Europe or India must provide a VAT number.
     source_ids:
       - src_0e6de24b22d55b89e4677c46e9d174e95c6ce82823eae40f786d9b1366ec9559
